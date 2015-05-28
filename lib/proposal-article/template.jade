@@ -43,16 +43,24 @@
           =proposal.author
     h3=proposal.title
     .entry-content
-      hr
-      .shortsummary
-      hr
+      - if(proposal.shortsummary)  
+        hr
+        .shortsummary
+        hr
       .summary
-      .prosandcons
-        .icons
-          i.icon-plus-sign.icon-large
-          i.icon-minus-sign.icon-large
-        .pros
-        .cons
+      - if(proposal.pros && proposal.cons)
+        .prosandcons
+          .icons
+            .icon-wrapper
+              i.icon-plus-sign
+            .icon-wrapper
+              i.icon-minus-sign
+          .icons-wrapper-sm
+            i.icon-plus-sign
+          .pros.column
+          .icons-wrapper-sm
+            i.icon-minus-sign
+          .cons.column
       .clauses
         - if (clauses.length)
           - each clause, i in clauses
