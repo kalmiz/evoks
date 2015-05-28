@@ -47,20 +47,30 @@ article.proposal
 
   .prosandcons
     margin-bottom 40px
+    .icons-wrapper-sm
+      display none
+      margin-top 10px
+      margin-bottom 10px
+      i
+        font-size 1.5em
     .icons
       display block
       width 100%
 
       margin-bottom 10px
-      i
-        display inline-block
+      .icon-wrapper
         position relative
-        margin-left 25%
-        margin-right 21%
-        left -1em
-    .pros, .cons
+        display inline-block
+        width 49%
+        margin-right 2%
+        text-align center
+        &:last-of-type
+          margin-right 0
+        i
+          font-size 1.5em
+    .column
       display inline-table
-      width 48%
+      width 49%
       margin-right 2%
 
       padding .2em
@@ -69,7 +79,10 @@ article.proposal
       background-color #ecf0f1
 
       border-radius 4px
-
+      &:last-of-type
+        margin-right 0
+    .pros
+      margin-right 2%
 
   .clauses
     .clause
@@ -191,3 +204,16 @@ article.proposal
     width 100%
     height 100%
     border none
+
+@media screen and (max-width: 450px)
+  article.proposal
+    .prosandcons
+      .column
+        width 100%
+        margin-bottom 2%
+      .icons
+        display none
+      .icons-wrapper-sm
+        display block
+        width 100%
+        text-align center
