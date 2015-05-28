@@ -1,4 +1,56 @@
 
+0.17.3 / 2015-05-27
+===================
+
+  * Fix emebed videos on https #859
+  * Normalize usage of avatar on user model #854
+  * Fixed overflow on remove confirmation box #850
+  * Default translations 'en' <- 'config.locale' <- 'user.locale' #828
+  * Set user locale on signup Closes #828
+
+0.17.2 / 2015-05-26
+===================
+
+  * Update DemocracyOS/side-comments version
+  * Fix Law summary html filter #839
+  * Set default value null for learnMoreUrl #837
+  * Fix logout bug. Sometimes it just didnt work #811
+
+0.17.1 / 2015-05-19
+===================
+
+  * Add headerContrast configuration #795
+  * Dont remove stylings on law summary #810
+  * Fix side comments #807 #759
+
+0.17.0 / 2015-05-18
+===================
+
+  * Consolidate TLS/SSL configuration #822
+  * Add fallback on missing translation keys with default locale #808
+  * Add facebook login/signup form #815
+  * Remove privatePort config key #788
+
+0.16.2 / 2015-05-12
+===================
+
+  * Fix variable redefinition that causes app to crash in HTTPS mode #803
+
+0.16.1 / 2015-05-12
+===================
+
+  * Fix users whitelist configuration #806
+
+0.16.0 / 2015-05-08
+===================
+
+  * Improvements on spanish translations #767
+  * Add Hungarian translations #793
+  * Improvements on french translations #784
+  * Now the user can change the app language from settings page #630
+  * Improvements on Portuguese translations #779
+  * Add App visivility configuration #741
+
 0.15.0 / 2015-04-28
 ==================
 
