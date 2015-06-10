@@ -14,10 +14,10 @@
       - if(config.locale == 'hu')
         .form-group
           label #{t('signup.your-lastname')}
-          input.form-control(type='text', id='lastName', name='lastName', tabindex=3, placeholder=t('signup.lastname'), validate='required lastname')
+          input.form-control(type='text', id='lastName', name='lastName', tabindex=2, placeholder=t('signup.lastname'), validate='required lastname')
         .form-group
           label #{t('signup.your-firstname')}
-          input.form-control(type='text', id='firstName', name='firstName', tabindex=2, placeholder=t('signup.firstname'), validate='required firstname')
+          input.form-control(type='text', id='firstName', name='firstName', tabindex=3, placeholder=t('signup.firstname'), validate='required firstname')
       - else
         .form-group
           label #{t('signup.your-firstname')}
