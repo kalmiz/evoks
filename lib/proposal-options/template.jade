@@ -8,6 +8,14 @@
 - var closed = proposal.closingAt && +new Date(proposal.closingAt) < Date.now()
 - var voted = citizen && ~census.indexOf(citizen.id)
 
+- var convertPercent = function(percent){
+-      if(config.locale=="hu"){
+-       return String(percent).replace(".", ",");
+-      } else {
+-       return percent;
+-      }
+-  }
+
 .inner-container.commentable-container(class=proposal.votable ? '' : 'hide')
 
   .proposal-options
@@ -58,25 +66,25 @@
             .votes-afirmative.votes-results
               h5= t('proposal-options.yea')
               - var width = census.length ? (positives.length/census.length)*100 : 0;
-              - var width = Math.round(width*100)/100
+              - var width = Math.round(width*10)/10
               - var s = 1 === positives.length ? '' : 's'
-              span.percent #{width} %
+              span.percent #{convertPercent(width)}% &nbsp;
               span.votes #{positives.length} #{t('proposal-options.vote-item')}
 
           - if (negatives.length)
             .votes-negative.votes-results
               h5= t('proposal-options.nay')
               - var width = census.length ? (negatives.length/census.length)*100 : 0;
-              - var width = Math.round(width*100)/100
+              - var width = Math.round(width*10)/10
               - var s = 1 === negatives.length ? '' : 's'
-                span.percent #{width} %
+                span.percent #{convertPercent(width)}%  &nbsp;
                 span.votes #{negatives.length} #{t('proposal-options.vote-item')}
 
           - if (neutrals.length)
             .votes-neutral.votes-results
               h5= t('proposal-options.abstain')
               - var width = census.length ? (neutrals.length/census.length)*100 : 0;
-              - var width = Math.round(width*100)/100
+              - var width = Math.round(width*10)/10
               - var s = 1 === neutrals.length ? '' : 's'
-                span.percent #{width} %
+                span.percent #{convertPercent(width)}%  &nbsp;
                 span.votes #{neutrals.length} #{t('proposal-options.vote-item')}
