@@ -1,3 +1,4 @@
+- var organizationFacebookPage = config.organizationFacebookPage
 nav.sidebar-nav
   #filter-container.dropdown-department
 
@@ -5,10 +6,10 @@ nav.sidebar-nav
 
   //- Facebook-box
   
-  .fb-page(data-href="https://www.facebook.com/eVoks.hu", data-width="240", data-hide-cover="false", data-show-facepile="true", data-show-posts="false")
+  .fb-page(data-href=organizationFacebookPage, data-width="240", data-hide-cover="false", data-show-facepile="true", data-show-posts="false")
     .fb-xfbml-parse-ignore
-      blockquote(cite="https://www.facebook.com/eVoks.hu")
-        a(href="https://www.facebook.com/eVoks.hu") facebook.com/eVoks.hu
+      blockquote(cite=organizationFacebookPage)
+        a(href=organizationFacebookPage)= organizationFacebookPage
   
   .links
     a(href="http://atlatszo.hu", target="_blank") atlatszo.hu
