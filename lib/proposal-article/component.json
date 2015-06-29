@@ -4,7 +4,9 @@
   "dependencies": {
     "component/truncate": "72b55",
     "component/dom": "1.0.6",
-    "yields/wrap": "0.0.1"
+    "yields/wrap": "0.0.1",
+    "cristiandouce/Chart.js": "eef51",
+    "component/t": "1.0.0"
   },
   "locals": [
     "config",
@@ -12,7 +14,8 @@
     "citizen",
     "proposal-clauses",
     "render",
-    "view"
+    "view",
+    "debug"
   ],
   "scripts": [ "proposal-article.js" ],
   "templates": [ "template.jade", "paragraph.jade" ],

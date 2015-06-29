@@ -17,7 +17,7 @@
 -  }
 
 .inner-container.commentable-container(class=proposal.votable ? '' : 'hide')
-
+  #proposal-options
   .proposal-options
     .vote-box
       div#voting-error.alert.alert-warning.hide #{t('proposal-options.error.voting')}.
@@ -56,7 +56,8 @@
       .votes-cast
         em.text-muted= t('proposal-options.votes-cast', { num: census.length || "0" })
 
-    - if (closed || voted)
+    //-- if (closed || voted)
+    - if (true)
       .results-box.row.clearfix
         p.alert.alert-info(class=census.length ? 'hide' : ''): label= t('proposal-options.no-votes-cast')
         .results-chart(class= census.length ? '' : 'hide').col-sm-6

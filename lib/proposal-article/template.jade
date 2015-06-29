@@ -24,7 +24,7 @@
           polygon#Polygon-1(d='M63,0 L125.353829,36 L125.353829,108 L63,144 L0.646170928,108 L0.646170928,36 L63,0 Z M63,0', fill='#{proposal.tag.color}', sketch:type='MSShapeGroup', points='63 0 125.353829 36 125.353829 108 63 144 0.646170928 108 0.646170928 36 ')
 
       div(style="color: #{proposal.tag.color}")= proposal.tag.name
-
+      
     .meta-information
       p
         i.icon-time
@@ -35,6 +35,13 @@
           span.meta-item.meta-timeago= t('proposal-article.unknown-closing-date')
 
     h1=proposal.mediaTitle
+    .top-results-box
+      p= t('proposal-article.call-to-action.before')
+      canvas#mini-chart(width="100", height="80")
+      p= t('proposal-article.call-to-action.after')
+      a.btn.btn-default(href="#proposal-options")= t('proposal-article.call-to-action.button')
+        &nbsp;
+        i.icon-arrow-down
     - if (proposal.author)
       h2.author=t('admin-laws-form.label.author') + ': '
         - if (proposal.authorUrl)
