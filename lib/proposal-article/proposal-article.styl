@@ -58,6 +58,8 @@ article.proposal
     font-weight bold
 
   .prosandcons
+    width 130%
+    margin-left -15%
     margin-bottom 40px
     .icons-wrapper-sm
       display none
@@ -94,7 +96,10 @@ article.proposal
       &:last-of-type
         margin-right 0
     .pros
+      background-color lighten(#a4cb53, 50%)
       margin-right 2%
+    .cons
+      background-color lighten(#d95e59, 60%)
   .clauses
     .clause
       margin-bottom 20px
@@ -218,16 +223,3 @@ article.proposal
     width 100%
     height 100%
     border none
-
-@media screen and (max-width: 450px)
-  article.proposal
-    .prosandcons
-      .column
-        width 100%
-        margin-bottom 2%
-      .icons
-        display none
-      .icons-wrapper-sm
-        display block
-        width 100%
-        text-align center
