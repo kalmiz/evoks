@@ -87,6 +87,7 @@
   "rssEnabled": true,
   "commentsPerPage": 0,
   "spamLimit": 5,
+  "downvoteLimit": 5,
   "frequentlyAskedQuestions": false,
   "termsOfService": false,
   "privacyPolicy": false,
