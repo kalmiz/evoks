@@ -27,6 +27,10 @@
           .col-sm-10
             input.form-control(type='text', id="lawId", name='lawId', tabindex=3, placeholder=t('admin-laws-form.label.lawId'), value=law.lawId)
         .form-group
+          label.col-sm-2.control-label= t('admin-laws-form.label.friendlyURL')
+          .col-sm-10
+            input.form-control(type='text', name='friendlyURL', tabindex=7, value=law.friendlyURL)
+        .form-group
           label.col-sm-2.control-label= t('admin-laws-form.label.author')
           .col-sm-10
             input.form-control(type='text', id="lawAuthor", name='lawAuthor', tabindex=4, placeholder='John Doe', value=law.author, validate='author')
