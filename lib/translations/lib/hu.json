@@ -22,6 +22,7 @@
   "admin-laws-form.delete-law.confirmation.cancel": "Mégsem",
   "admin-laws-form.delete-law.confirmation.ok": "Törlés",
   "admin-laws-form.delete-law.confirmation.title": "Téma törlése",
+  "admin-laws-form.label.friendlyURL": "Barátságos URL",
   "admin-laws-form.label.author": "Szerző",
   "admin-laws-form.label.clause-truncation-text": "Kiegészítés részlete",
   "admin-laws-form.label.closingAt": "Lezárás dátuma:",
