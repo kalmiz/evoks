@@ -318,6 +318,7 @@
   "validators.invalid.number": "Érvénytelen szám",
   "validators.invalid.time": "Érvénytelen idő",
   "validators.invalid.url": "Érvénytelen URL cím",
+  "validators.invalid.friendlyurl": "Érvénytelen URL! Csak a-z, 0-9 és \"-\" engedélyezettek!",
   "validators.max-length.plural": "Legfeljebb {n} karakterből álljon",
   "validators.max-length.singular": "Legfeljebb 1 karakterből álljon",
   "validators.min-length.plural": "Legalább {n} karakterből álljon",
