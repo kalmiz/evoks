@@ -1,4 +1,5 @@
 - var closed = proposal.closed
+- var socialURL = proposal.friendlyURL ? '/topic/' + proposal.friendlyURL : '/law/' + proposal.id
 .inner-container
   - var learnMore = config.learnMoreUrl
   - if (learnMore)
@@ -102,10 +103,10 @@
 
     //- Article share links
     .share-links
-      <div class="fb-like" data-href="#{baseUrl}/topic/#{proposal.friendlyURL}" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div>
+      <div class="fb-like" data-href="#{baseUrl}#{socialURL}" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div>
       br
       br
-      a(target="_blank", href="http://www.facebook.com/sharer.php?u=#{baseUrl}/topic/#{proposal.friendlyURL}").flaticon.social.facebook
-      a(target="_blank", href="http://twitter.com/share?text=#{proposal.mediaTitle}&url=#{baseUrl}/topic/#{proposal.friendlyURL}").flaticon.social.twitter
-      a(target="_blank", href="https://plus.google.com/share?url=#{baseUrl}/topic/#{proposal.friendlyURL}").flaticon.social.google-plus
-      a(target="_blank", href="https://www.tumblr.com/share/link?url=#{baseUrl}/topic/#{proposal.friendlyURL}&name=#{proposal.mediaTitle}&description=#{proposal.shortsummary ? proposal.shortsummary : proposal.mediaTitle}").flaticon.social.tumblr
+      a(target="_blank", href="http://www.facebook.com/sharer.php?u=#{baseUrl}#{socialURL}").flaticon.social.facebook
+      a(target="_blank", href="http://twitter.com/share?text=#{proposal.mediaTitle}&url=#{baseUrl}#{socialURL}").flaticon.social.twitter
+      a(target="_blank", href="https://plus.google.com/share?url=#{baseUrl}#{socialURL}").flaticon.social.google-plus
+      a(target="_blank", href="https://www.tumblr.com/share/link?url=#{baseUrl}#{socialURL}&name=#{proposal.mediaTitle}&description=#{proposal.shortsummary ? proposal.shortsummary : proposal.mediaTitle}").flaticon.social.tumblr
