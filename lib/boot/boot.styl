@@ -16,7 +16,6 @@ html
 
 body
   color #4d4d4d
-  overflow hidden
 
 h1,h2,h3,h4,h5,h6
   font-weight bold
@@ -116,6 +115,7 @@ img.avatar
 body.browser-page
   section#content
     display none
+    background-color white
 
 section.site-content
   padding-top header_height
@@ -123,10 +123,13 @@ section.site-content
   left nav_proposal_width
   right 0
   bottom 0
+  background-color white
   &#content
     z-index 12
     left 0
 
+section.app-content
+  background-color white
 /* Signin page
 -------------------------------------------------- */
 .signin-container, .signup-container, .forgot-container
@@ -148,9 +151,11 @@ aside.nav-proposal
   bottom 0
   width nav_proposal_width
   border-right 1px solid #BDC3C7
-  overflow-y scroll
   background #ECF0F1
   z-index 10
+  position absolute
+  margin-bottom -101%
+  padding-bottom 101%
   .navlist
     li
       border-bottom 1px solid lighten(#BDC3C7, 40%)
